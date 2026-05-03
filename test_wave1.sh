@@ -1,4 +1,4 @@
-#!#!/bin/bash
+#!/bin/bash
 
 BASE_DIR="/scratch/test-repos"
 
@@ -9,7 +9,7 @@ run_wave() {
 
     echo ""
     echo "========================================"
-    echo "🌊 Starting $wave_name (${#students[@]} students)..."
+    echo "Starting $wave_name (${#students[@]} students)..."
     echo "========================================"
 
     for STUDENT in "${students[@]}"; do
@@ -22,12 +22,9 @@ run_wave() {
             echo "✅ Pushed: $STUDENT"
         ) &
     done
-
     wait
-    echo "✅ $wave_name complete. Waiting 60 seconds..."
-    sleep 60
 }
 
-run_wave "Wave 1 - 5 students"  teststudent1
+run_wave "Wave 1 student"  teststudent1
 echo ""
 echo "test_wave1 complete!"
