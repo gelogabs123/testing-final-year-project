@@ -45,7 +45,7 @@ On lab machine 2:
 - run wave tests
 e.g.
 ```
-test_wave1
+./test_wave1
 ```
 Change wave number accordingly
 
