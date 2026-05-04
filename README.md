@@ -25,13 +25,13 @@ test_wave1 - 1 repo
 test_wave5 - 5 repos
 test_wave10 - 10 repos
 test_wave20 - 20 repos
-test_wave 30 - 30 repos
-test_wave 40 - 40 repos
-test_wave 50 - 50 repos
+test_wave30 - 30 repos
+test_wave40 - 40 repos
+test_wave50 - 50 repos
 
 This Load Test REQUIRES 2 seperate lab machines.
 
-On lab machine 1:
+### On lab machine 1:
 - (On terminal 1) Run server (server.py and ngrok in final-year-project repo. Instructions also in repo)
 - (On terminal 2) IMPORTANT DO THIS BEFORE RUNNING WAVE TESTS - Track GPU logs and usage using the command below:
 ```
@@ -41,11 +41,20 @@ nvidia-smi --query-gpu=timestamp,memory.used,memory.free,utilization.gpu,power.d
 GPU logs are stored in gpu_log_wave{waveNumber} (Replace the waveNumber with the appropriate wave test)
 Seperate gpu logs are for easy organisation and seperation for each wave test.
 
-On lab machine 2:
+### On lab machine 2:
+- clone all 50 test repositories using the file `load_test.sh`
+Run
+```
+chmod +x load_test.sh
+./load_test.sh
+```
+
 - run wave tests
 e.g.
 ```
-./test_wave1
+chmod
+chmod +x .sh
+./test_wave{waveNumber}
 ```
 Change wave number accordingly
 
