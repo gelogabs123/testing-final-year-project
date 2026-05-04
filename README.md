@@ -52,7 +52,6 @@ chmod +x load_test.sh
 - run wave tests
 e.g.
 ```
-chmod
 chmod +x .sh
 ./test_wave{waveNumber}
 ```
