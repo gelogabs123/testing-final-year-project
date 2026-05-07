@@ -7,27 +7,28 @@ Ensure gh (GitHub) is working for your terminal
 
 sudo commands won't work on BB lab machines so use this curl command to install gh
 
+```
 mkdir -p ~/.local/bin
 curl -L https://github.com/cli/cli/releases/download/v2.49.0/gh_2.49.0_linux_amd64.tar.gz | tar xz -C /tmp
 cp /tmp/gh_2.49.0_linux_amd64/bin/gh ~/.local/bin/gh
 export PATH="$HOME/.local/bin:$PATH"
+```
+
+I used `/scratch` directory to have more space cloning all repos
 
 
-I used /scratch directory to have more space cloning all repos
-
-
-Use setup.sh to clone the 50 testing assignment repos to your otter lab machine
+Use `setup.sh` to clone the 50 testing assignment repos to your otter lab machine
 
 ## How the test works
 Load testing will be run in waves. Each wave is a a different amount of repos.
 Each wave is on different files
-test_wave1 - 1 repo
-test_wave5 - 5 repos
-test_wave10 - 10 repos
-test_wave20 - 20 repos
-test_wave30 - 30 repos
-test_wave40 - 40 repos
-test_wave50 - 50 repos
+`test_wave1`- 1 repo
+`test_wave5`- 5 repos
+`test_wave10` - 10 repos
+`test_wave20` - 20 repos
+`test_wave30` - 30 repos
+`test_wave40` - 40 repos
+`test_wave50` - 50 repos
 
 This Load Test REQUIRES 2 seperate lab machines.
 
