@@ -26,6 +26,6 @@ run_wave() {
 
 }
 
-run_wave "Wave 1 - 5 students"  teststudent{1..30}
+run_wave "Wave 1 - 30 students"  teststudent{1..30}
 echo ""
 echo "test_wave30 complete!"
