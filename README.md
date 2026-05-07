@@ -42,11 +42,11 @@ GPU logs are stored in gpu_log_wave{waveNumber} (Replace the waveNumber with the
 Seperate gpu logs are for easy organisation and seperation for each wave test.
 
 ### On lab machine 2:
-- clone all 50 test repositories using the file `load_test.sh`
+- clone all 50 test repositories using the file `setup.sh`
 Run
 ```
-chmod +x load_test.sh
-./load_test.sh
+chmod +x setup.sh
+./setup.sh
 ```
 
 - run wave tests
